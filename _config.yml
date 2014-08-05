@@ -1,0 +1,10 @@
+# Site settings
+title: Hasiel Hassan
+email: hasielhassan@gmail.com
+description: "A minimalistic sample site for urget situations!!!"
+twitter_username: hasielhassan
+github_username:  hasielhassan
+
+# Build settings
+markdown: kramdown
+permalink: pretty
