@@ -1,20 +1,993 @@
----
-layout: default
----
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class=no-js lang=en> <!--<![endif]-->
+<head>
 
-<div class="home">
+<title>John Doe</title>
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<script src="./js/modernizr-custom.js.pagespeed.ce.wQqCL3_MxW.js"></script>
+<link rel=stylesheet href="./css/app.css.pagespeed.ce.F6ho1oc7ii.css">
+<script>(function(a){a._gaq=[["_setAccount","UA-24430739-1"],["_trackPageview"]],Modernizr.load([{load:"./js/jquery.min.js",callback:function(b,c,d){a.jQuery||yepnope("./js/jquery.min.js")}},{load:"./js/underscore-min.js",callback:function(b,c,d){a._||yepnope("./js/underscore.min.js")}},{load:"./js/backbone-min.js",callback:function(b,c,d){a.Backbone||yepnope("js/backbone-min.js")}},"./js/app.js","./js/ga.js"])})(window)</script>
+<meta charset="UTF-8"></head>
+<body>
+<div id=page>
+<!-- Golbal Header -->
+<header id=header>
+<!-- Logo -->
+<hgroup id=logo>
+<h1>John Doe</h1>
+<h2>Web Designer &amp; Web Developer</h2>
+</hgroup>
+<!-- /Logo -->
+<!-- Golbal Nav -->
+<nav id=nav>
+<h1>Navigation</h1>
+<ul>
 
-  <h1>Postsss</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<li class=about><a href="#/about-me"><b></b><span>About me</span></a></li>
+<li class=contact><a href="#/contact-me"><b></b><span>Contact me</span></a></li>
+</ul>
+</nav>
+<!-- /Golbal Nav -->
+</header>
+<!-- /Golbal Header -->
+<!-- Portfolio Page-->
+<article id=portfolio class=page>
+<!-- Project Overview (project pages reuse this to display top nav)-->
+<header class=overview-mode>
+<div class=container>
+<h1 class=title>Portfolio</h1>
+<nav class=proj-nav>
+<h1>Project Overview</h1>
+<ul class=thumbnails>
+<!-- Individual Project Thumbnail -->
+<li class=photography>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/layout-test"><img data-src="img/proj/animal-thumb.jpg"></a>
+<figcaption class=title>Layout Test</figcaption>
+</figure>
+</li>
+<!-- /Individual Project Thumbnail -->
+<li class=web-design>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/appstorm"><img data-src="img/proj/appstorm-thumb.jpg"></a>
+<figcaption class=title>AppStorm</figcaption>
+</figure>
+</li>
+<li class=web-design>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/envato"><img data-src="img/proj/envato-thumb.jpg"></a>
+<figcaption class=title>Envato</figcaption>
+</figure>
+</li>
+<li class=web-design>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/tuts-plus"><img data-src="img/proj/tutsplus-thumb.jpg"></a>
+<figcaption class=title>Tuts Plus</figcaption>
+</figure>
+</li>
+<li class=photography>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/flowers"><img data-src="img/proj/flower-thumb.jpg"></a>
+<figcaption class=title>Flowers</figcaption>
+</figure>
+</li>
+<li class=web-design>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/freelance-switch"><img data-src="img/proj/freelanceswitch-thumb.jpg"></a>
+<figcaption class=title>Freelance Switch</figcaption>
+</figure>
+</li>
+<li class=web-design>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/rockable"><img data-src="img/proj/rockable-thumb.jpg"></a>
+<figcaption class=title>Rockable</figcaption>
+</figure>
+</li>
+<li class=web-design>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/creattica"><img data-src="img/proj/creattica-thumb.jpg"></a>
+<figcaption class=title>Creattica</figcaption>
+</figure>
+</li>
+<li class=print-design>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/rockable-book"><img data-src="img/proj/rockablebook-thumb.jpg"></a>
+<figcaption class=title>Rockable Book</figcaption>
+</figure>
+</li>
+<li class=print-design>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/rockable-card"><img data-src="img/proj/rockablecard-thumb.jpg"></a>
+<figcaption class=title>Rockable Card</figcaption>
+</figure>
+</li>
+<li class=photography>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/black-&amp;-white"><img data-src="img/proj/bw-thumb.jpg"></a>
+<figcaption class=title>Black &amp; White</figcaption>
+</figure>
+</li>
+<li class=print-design>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/graphicriver-leaflet"><img data-src="img/proj/graphicriverleaflet-thumb.jpg"></a>
+<figcaption class=title>Graphicriver Leaflet</figcaption>
+</figure>
+</li>
+<li class=photography>
+<figure class=thumbnail>
+<a class=image href="#/portfolio/landscapes"><img data-src="img/proj/landscape-thumb.jpg"></a>
+<figcaption class=title>Landscapes</figcaption>
+</figure>
+</li>
+</ul>
+</nav>
 </div>
+</header>
+<!-- /Project Overview -->
+<!-- Individual Project Page -->
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Layout Test</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Photograhpy</dd>
+</dl>
+<dl>
+<dt>Location</dt>
+<dd>Mindo, Pichincha</dd>
+</dl>
+<dl>
+<dt>Camera</dt>
+<dd>Canon PowerShot A710 IS</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2010.7.17</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>This is a <strong>layout test</strong> which shows off <em>different elements</em> a project can <del>breed</del>contain.</p>
+<h2>1/2</h2>
+<div class=container>
+<div class=span-6>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+<div class="span-6 last">
+<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+</div>
+<h2>1/4</h2>
+<div class=container>
+<div class=span-3>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+</div>
+<div class=span-3>
+<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+<div class=span-3>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+<div class="span-3 last">
+<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+</div>
+<div class=container>
+<div class=span-4>
+<h2>Ordered List</h2>
+<ol>
+<li>Quisque adipiscing hendrerit ipsum, sed accumsan dui porttitor vitae.</li>
+<li>Sed malesuada nunc sit amet nisi commodo faucibus.</li>
+<li>Phasellus eu erat id risus auctor hendrerit.</li>
+<li>Pellentesque vitae tortor ac tortor lobortis hendrerit a ut purus.</li>
+</ol>
+</div>
+<div class=span-4>
+<h2>Unordered List</h2>
+<ul>
+<li>Fusce suscipit purus eget est ullamcorper blandit.</li>
+<li>Nunc in libero at velit adipiscing feugiat sit amet eu lectus.</li>
+<li>Vestibulum vulputate tellus sit amet neque dignissim ultricies.</li>
+<li>Nulla bibendum vulputate purus, et mollis nisl tempus sed.</li>
+<li>Ut vitae lacus sit amet urna fringilla venenatis.</li>
+</ul>
+</div>
+<div class="span-4 last">
+<h2>Definition List</h2>
+<dl>
+<dt>Curabitur vitae</dt>
+<dd>Vestibulum ornare tortor eu purus laoreet scelerisque.</dd>
+<dt>Sed consequat</dt>
+<dd>Pellentesque tristique purus vitae purus dapibus placerat.</dd>
+<dt>Duis consequat est</dt>
+<dd>Curabitur eu neque et elit suscipit dictum.</dd>
+</dl>
+</div>
+</div>
+<div class=container>
+<div class=span-3>
+<h3>Heading 3</h3>
+<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+<div class=span-3>
+<h4>Heading 4</h4>
+<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+<div class=span-3>
+<h5>Heading 5</h5>
+<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+<div class="span-3 last">
+<h6>Heading 6</h6>
+<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+</div>
+<blockquote>
+<p>A video of a chimpanzee armed with AK-47 rifle has gone viral on YouTube and has become an Internet sensation.</p>
+</blockquote>
+<div class=figure>
+<!-- Individual Figure -->
+<div class=wrapper>
+<figure>
+<iframe width=560 height=349 src="http://www.youtube.com/embed/GhxqIITtTtU" frameborder=0 allowfullscreen></iframe>
+<figcaption class=title>Ape with AK-47</figcaption>
+</figure>
+</div>
+<!-- /Individual Figure -->
+</div>
+<h2></h2>
+<div class=figure>
+<div class=wrapper>
+<figure>
+<img data-src="img/proj/animal-snapshot.jpg" alt=Animal>
+<figcaption><a href="http://www.flickr.com/photos/epsos/4883281674/">Cute Dog Puppy</a> by <a href="http://www.flickr.com/photos/epsos/">epSos.de</a></figcaption>
+</figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure>
+<img data-src="img/proj/animal-snapshot2.jpg" alt=Animal><figcaption><a href="http://www.flickr.com/photos/epsos/4924530313/">Beautiful Blonde Horse Stud</a> by <a href="http://www.flickr.com/photos/epsos/">epSos.de</a></figcaption>
+</figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<!-- /Individual Project Page -->
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>AppStorm</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Web Design</dd>
+</dl>
+<dl>
+<dt>URL</dt>
+<dd><a href="http://appstorm.net">http://appstorm.net</a></dd>
+</dl>
+<dl>
+<dt>Client</dt>
+<dd>Envato</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2011.6</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>Developed by Envato, AppStorm is a app blog that brings you reviews, how-to's and roundups of iPhone, Mac and Web Apps!</p>
+<p>Computers have quickly become the focus of much of our time, so it makes sense to try to get the most out of them. The AppStorm network of blogs reviews, rounds up, and writes up apps for platforms like Mac OSX, the iPhone, iPad and the web.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/appstorm-snapshot.jpg" alt=AppStorm></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/appstorm-snapshot2.jpg" alt=AppStorm></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/appstorm-snapshot3.jpg" alt=AppStorm></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Envato</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Web Design</dd>
+</dl>
+<dl>
+<dt>URL</dt>
+<dd><a href="http://envato.com">http://envato.com</a></dd>
+</dl>
+<dl>
+<dt>Client</dt>
+<dd>Envato</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2011.6</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>Envato is a startup based out of Australia with people around the world and sites serving pages every second. We started in a living room in 2006 and have been steadily working to build our company into a world-class contender. Our background is creative, we love open source, we believe that work is about way more than just making money, and weâ€™re totally committed to making products that are awesome!</p>
+<p>Our mission is to help people to earn and to learn, online. We operate marketplaces where hundreds of thousands of people buy and sell digital goods every day, and a network of educational blogs where millions learn creative skills.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/envato-snapshot.jpg" alt=Envato></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/envato-snapshot2.jpg" alt=Envato></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/envato-snapshot3.jpg" alt=Envato></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Tuts Plus</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Web Design</dd>
+</dl>
+<dl>
+<dt>URL</dt>
+<dd><a href="http://tutsplus.com">http://tutsplus.com</a></dd>
+</dl>
+<dl>
+<dt>Client</dt>
+<dd>Envato</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2011.6</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>At Envato weâ€™re very passionate about education, thatâ€™s why weâ€™ve created one of the most popular networks of educational blogs around. Tuts+ serves up over 18 million pageviews a month across its many subsites on subjects like <a href="http://psd.tutsplus.com">graphics</a>, <a href="http://net.tutsplus.com">web development</a>, <a href="http://audio.tutsplus.com">audio production</a>, <a href="http://mobile.tutsplus.com">iPhone development</a> and <a href="http://ae.tutsplus.com">motion graphics</a>.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/tutsplus-snapshot.jpg" alt="Tuts Plus"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/tutsplus-snapshot2.jpg" alt=Envato></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/tutsplus-snapshot3.jpg" alt=Envato></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Flowers</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Flowers</h1>
+<dl>
+<dt>Category</dt>
+<dd>Photograhpy</dd>
+</dl>
+<dl>
+<dt>Location</dt>
+<dd>San Luis Obispo County, California, US</dd>
+</dl>
+<dl>
+<dt>Camera</dt>
+<dd>Canon EOS-1D Mark III</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2010.4.10</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>These are some flower photos by <a href="http://www.flickr.com/photos/mikebaird/">mikebaird</a></p>
+<p>The first photo is from <a href="http://www.flickr.com/photos/mikebaird/4509514539/">here</a>. The second photo is from <a href="hhttp://www.flickr.com/photos/mikebaird/4510152438/">here</a>. The third photo is from <a href="http://www.flickr.com/photos/mikebaird/4510154358/">here</a>.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/flower-snapshot.jpg" alt=Flower></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/flower-snapshot2.jpg" alt=Flower></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/flower-snapshot3.jpg" alt=Flower></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Freelance Switch</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Web Design</dd>
+</dl>
+<dl>
+<dt>URL</dt>
+<dd><a href="http://freelanceswitch.com">http://freelanceswitch.com</a></dd>
+</dl>
+<dl>
+<dt>Client</dt>
+<dd>Envato</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2011.6</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>Working from home as a freelancer can be very isolating. Thatâ€™s why we created FreelanceSwitch, a forums, blog, podcast, job board and directory where freelancers can share advice, chat, find work and be a part of a larger freelance community. The site has won blogging awards, been featured in numerous places and is the leading blog on freelancing.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/freelanceswitch-snapshot.jpg" alt="Freelance Switch"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/freelanceswitch-snapshot2.jpg" alt="Freelance Switch"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/freelanceswitch-snapshot3.jpg" alt="Freelance Switch"></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Rockable</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Web Design</dd>
+</dl>
+<dl>
+<dt>URL</dt>
+<dd><a href="http://rockablepress.com">http://rockablepress.com</a></dd>
+</dl>
+<dl>
+<dt>Client</dt>
+<dd>Envato</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2011.6</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>When a few staff at Envato decided to write up a book on freelancing we decided to turn it into a whole series of books and publish them ourselves. Rockable Press is our fledgling online publishing brand and sells books, minibooks and reports.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/rockable-snapshot.jpg" alt=Rockable></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/rockable-snapshot2.jpg" alt=Rockable></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/rockable-snapshot3.jpg" alt=Rockable></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Creattica</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Web Design</dd>
+</dl>
+<dl>
+<dt>URL</dt>
+<dd><a href="http://creattica.com">http://creattica.com</a></dd>
+</dl>
+<dl>
+<dt>Client</dt>
+<dd>Envato</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2011.6</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>Creattica is a gallery of inspirational design work of all varieties from 3d to advertising, business cards to web design and of course our most popular category â€“ logos! Submissions come from our community of creatives and are hand picked for showcasing on the gallery to ensure only the finest work is on display.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/creattica-snapshot.jpg" alt=Creattica></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/creattica-snapshot2.jpg" alt=Creattica></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/creattica-snapshot3.jpg" alt=Creattica></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Rockable Book</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Print Design</dd>
+</dl>
+<dl>
+<dt>URL</dt>
+<dd><a href="http://rockablepress.com">http://rockablepress.com</a></dd>
+</dl>
+<dl>
+<dt>Client</dt>
+<dd>Envato</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2011.6</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>Covering everything from getting started to expanding your business, How to Be a Rockstar Freelancer is the official FreelanceSwitch book. Written by Collis &amp; Cyan Taâ€™eed â€“ the founders of the site â€“ itâ€™s packed with new information, advice and insights not covered on the blog.</p>
+<p>If you want to start your freelance career the right way, then How to Be a Rockstar Freelancer will give you everything you need to become the best freelancer in town!</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/rockablebook-snapshot.jpg" alt="Rockable Book"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/rockablebook-snapshot2.jpg" alt="Rockable Book"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/rockablebook-snapshot3.jpg" alt="Rockable Book"></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Rockable Card</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Print Design</dd>
+</dl>
+<dl>
+<dt>URL</dt>
+<dd><a href="http://rockablepress.com">http://rockablepress.com</a></dd>
+</dl>
+<dl>
+<dt>Client</dt>
+<dd>Envato</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2011.6</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>Covering everything from getting started to expanding your business, How to Be a Rockstar Freelancer is the official FreelanceSwitch book. Written by Collis &amp; Cyan Taâ€™eed â€“ the founders of the site â€“ itâ€™s packed with new information, advice and insights not covered on the blog.</p>
+<p>If you want to start your freelance career the right way, then How to Be a Rockstar Freelancer will give you everything you need to become the best freelancer in town!</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/rockablecard-snapshot.jpg" alt="Rockable Card"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/rockablecard-snapshot2.jpg" alt="Rockable Card"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/rockablecard-snapshot3.jpg" alt="Rockable Card"></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Black &amp; White</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Photograhpy</dd>
+</dl>
+<dl>
+<dt>Location</dt>
+<dd>Higashichikuma-gun, Nagano Prefecture, JP</dd>
+</dl>
+<dl>
+<dt>Camera</dt>
+<dd>Fujifilm FinePix F30</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2008.9.23</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>These are some black &amp; white photos by <a href="http://www.flickr.com/photos/jamespaullong/">ricoeurian</a></p>
+<p>The first photo is from <a href="http://www.flickr.com/photos/jamespaullong/290903509/">here</a>. The second photo is from <a href="http://www.flickr.com/photos/jamespaullong/164875156/">here</a>. The third photo is from <a href="http://www.flickr.com/photos/jamespaullong/181011544/">here</a>.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/bw-snapshot.jpg" alt="Graphicriver Leaflet"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/bw-snapshot2.jpg" alt="Graphicriver Leaflet"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/bw-snapshot3.jpg" alt="Graphicriver Leaflet"></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Graphicriver Leaflet</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Print Design</dd>
+</dl>
+<dl>
+<dt>URL</dt>
+<dd><a href="http://graphicriver.net">http://graphicriver.net</a></dd>
+</dl>
+<dl>
+<dt>Client</dt>
+<dd>Envato</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2011.6</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>Buy royalty free stock graphics and vectors, icon sets and Photoshop add-ons from GraphicRiver, a huge marketplace of great files.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/graphicriverleaflet-snapshot.jpg" alt="Graphicriver Leaflet"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/graphicriverleaflet-snapshot2.jpg" alt="Graphicriver Leaflet"></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/graphicriverleaflet-snapshot3.jpg" alt="Graphicriver Leaflet"></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+<article class=project>
+<header>
+<div class=container>
+<a href="#/portfolio" class=back>Back to Portfolio</a>
+<h1 class=title>Landscapes</h1>
+</div>
+</header>
+<div class=container>
+<section class=details>
+<h1>Details</h1>
+<dl>
+<dt>Category</dt>
+<dd>Photograhpy</dd>
+</dl>
+<dl>
+<dt>Location</dt>
+<dd>Higashichikuma-gun, JP</dd>
+</dl>
+<dl>
+<dt>Camera</dt>
+<dd>Fujifilm FinePix F30</dd>
+</dl>
+<dl>
+<dt>Date</dt>
+<dd>2008.9.23</dd>
+</dl>
+</section>
+<section class=intro>
+<h1>Introduction</h1>
+<p>These are some landscape photos by <a href="http://www.flickr.com/photos/zoutedrop/">zoutedrop</a></p>
+<p>The first photo is from <a href="http://www.flickr.com/photos/zoutedrop/4659434724/">here</a>. The second photo is from <a href="http://www.flickr.com/photos/zoutedrop/4659433298/">here</a>. The third photo is from <a href="http://www.flickr.com/photos/zoutedrop/3055849607/">here</a>.</p>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/landscape-snapshot.jpg" alt=Landscape></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/landscape-snapshot2.jpg" alt=Landscape></figure>
+</div>
+</div>
+<div class=figure>
+<div class=wrapper>
+<figure><img data-src="img/proj/landscape-snapshot3.jpg" alt=Landscape></figure>
+</div>
+</div>
+</section>
+</div>
+</article>
+</article>
+<!-- /Portfolio Page-->
+<!-- About Page-->
+<article id=about class=page>
+<header>
+<div class=container>
+<a href="#/" class=back>Back to Home</a>
+<h1 class=title>About Me</h1>
+</div>
+</header>
+<div class=container>
+<section class=intro>
+<h1>Introduction</h1>
+<figure class=portrait>
+<div class=mask></div>
+<img data-src="img/portrait.jpg">
+</figure>
+<div class=content>
+<p>I´m Technical Artist with more than 4 years of experience in animation projects including feature films, shortfilms and tv series. With an art-tech background I focus on pipeline and workflow for whole productions to ease the artist work and increase the possibilities to create better stories.</p>
+<p>Familiar and comfortable with team working environment and meeting deadlines; experienced in collaborating with other artists in similar and different fields. Experienced in the following software: 3D Max, Maya, Photoshop, After Effects, Fusion, Premiere, Final Cut, Toom-Boom Suite and Shotgun tracking system. Also, fluent in MaxScript and Python coding and familiar with MEL, C# and C++.</p>
+</div>
+</section>
+<section class=skills>
+<h1>My Skills</h1>
+<dl>
+<dt>3DMax</dt>
+<dd><b></b><span>85</span></dd>
+<dt>Photoshop</dt>
+<dd><b></b><span>85</span></dd>
+<dt>Maya</dt>
+<dd><b></b><span>80</span></dd>
+<dt>Python</dt>
+<dd><b></b><span>80</span></dd>
+<dt>Hiero</dt>
+<dd><b></b><span>75</span></dd>
+<dt>PyQT/PySide</dt>
+<dd><b></b><span>75</span></dd>
+<dt>Linux</dt>
+<dd><b></b><span>75</span></dd>
+</dl>
+</section>
+<section class=downloads>
+<h1>Downloads</h1>
+<div class=vcard>
+<a href="#example"><b></b><span>Download my vCard</span></a>
+</div>
+<div class=resume>
+<a href="#example"><b></b><span>Download my Resume</span></a>
+</div>
+</section>
+</div>
+</article>
+<!-- /About Page-->
+<!-- Contact Page-->
+<article id=contact class=page>
+<header>
+<div class=container>
+<h1 class=title>Contact Me</h1>
+</div>
+</header>
+<div class=container>
+<section class=info>
+<h1>Contact Information</h1>
+<dl>
+<dt class=phone>Phone</dt>
+<dd class=phone>+52 1 3317139003</dd>
+<dt class=address>Address</dt>
+<dd class=address>Guadalajara, Mexico</dd>
+</dl>
+</section>
+<section class=social>
+<h1>Social Networks</h1>
+<ul>
+<li class=email><a href="mailto:hasielhassan@gmail.com">hasielhassan@gmail.com</a></li>
+<li class=twitter><a href="http://twitter.com/hasielhassan">Follow me on Twitter</a></li>
+<li class=facebook><a href="https://www.facebook.com/hasielhassan">Follow me on Facebook</a></li>
+<li class=linkedin><a href="http://mx.linkedin.com/in/hasielhassan/">Check me out on LinkedIn</a></li>
+<li class=skype><a href="skype:hasielhassan?chat">Contact me on Skype</a></li>
+<li class=github><a href="https://github.com/hasielhassan">Collaborate with me on Github</a></li>
+<li class=blogger><a href="http://hasielalvarez.blogspot.mx/">Read my blog!!</a></li>
+</ul>
+</section>
+<section class=map>
+<figure>
+</figure>
+</section>
+<section class=form>
+<h1>Contact Form</h1>
+<form method=post action="/">
+<p class=single-line><label for=contact-form-name>Name</label><input type=text id=contact-form-name name=name required></p>
+<p class=single-line><label for=contact-form-email>Email</label><input type=email id=contact-form-email name=email required></p>
+<p class=multi-line><textarea required></textarea></p>
+<div class=buttons>
+<button type=submit><span><b></b><span>Send</span></span></button>
+</div>
+</form>
+</section>
+</div>
+</article>
+<!-- /Contact Page-->
+<!-- Global Footer (will be appended to all pages)-->
+<footer id=footer>
+<div class=container>
+<a class=back-to-top href="#">Back To Top</a>
+<div class=legal>&copy; 2014 HasielHassan All rights reserved.</div>
+</div>
+</footer>
+<!-- /Global Footer -->
+</div>
+<!-- Client-side Template -->
+<script id=tooltip-tpl type="text/html">
+		<span class="tooltip">
+			<b class="arrow"></b>
+			<span class="content"><%= text %></span>
+		</span>
+	</script>
+<script id=filter-tpl type="text/html">
+		<div class="filter">
+			<b></b>
+			<ul>
+				<li class="active">Everything</li>
+				<li>Web Design</li>
+				<li>Print Design</li>
+				<li>Photography</li>
+			</ul>
+			<span class="thumb"><b></b><span></span></span>
+		</div>
+	</script>
+<script id=pagination-tpl type="text/html">
+		<span class="pagination">
+			<span class="prev"></span><span class="num"></span><span class="next"></span>
+		</span>
+	</script>
+<script id=indicators-tpl type="text/html">
+		<div class="indicators">
+			<span class="progress">Sending message...</span>
+			<span class="success">Message sent successfully</span>
+			<span class="error">Error sending message</span>
+		</div>
+	</script>
+<!-- /Client-side Template -->
+</body>
+</html>
