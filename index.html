@@ -12,6 +12,19 @@
 <script>(function(a){a._gaq=[["_setAccount","UA-24430739-1"],["_trackPageview"]],Modernizr.load([{load:"./js/jquery.min.js",callback:function(b,c,d){a.jQuery||yepnope("./js/jquery.min.js")}},{load:"./js/underscore-min.js",callback:function(b,c,d){a._||yepnope("./js/underscore.min.js")}},{load:"./js/backbone-min.js",callback:function(b,c,d){a.Backbone||yepnope("js/backbone-min.js")}},"./js/app.js","./js/ga.js"])})(window)</script>
 <meta charset="UTF-8"></head>
 <body>
+
+<script>
+
+	function initFreshChat() {
+		window.fcWidget.init({
+		token: "c3d9080d-4d23-43d8-b673-1a81017a9e6e",
+		host: "https://wchat.freshchat.com"
+		});
+	}
+	function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+	
+</script>
+
 <div id=page>
 <!-- Golbal Header -->
 <header id=header>
